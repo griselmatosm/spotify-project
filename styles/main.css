@@ -1,0 +1,59 @@
+/* reset */
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*HEADER*/
+
+.header {
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-spotify {
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.spoti {
+    width: 100%;
+}
+.menu {
+    display: flex;
+    
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+a{
+    color: white;
+}
+.menu-item{
+    margin: 0 15px;
+}
+
+.plans-bottom {
+    background-color: green;
+    border-radius: 9%;
+    padding: 7px;
+}
+
+/* SECCION PREMIUM BANNER */
+
+.premium-banner {
+    background-color: #128686;
+}
