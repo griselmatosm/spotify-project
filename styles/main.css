@@ -1,59 +1,154 @@
 /* reset */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 /*HEADER*/
 
 .header {
-    background-color: black;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: black;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  /* border: white 1.5px solid; */
 }
 .logo-spotify {
-    width: 90px;
-    height: 30px;
-    display: flex;
-    align-items: center;
+  width: 90px;
+  height: 30px;
+  margin-left: 20px;
+  /* border: white 1.5px solid; */
 }
 .spoti {
-    width: 100%;
+  width: 100%;
 }
-.menu {
-    display: flex;
-    
-}
+
 .menu-list {
-    display: flex;
-    align-items: center;
-    padding: 0;
+  display: flex;
+  padding: 0;
+  /* border: white 1.5px solid; */
 }
-a{
+.menu-item {
+  margin: 0 20px;
+  /* border: white 1.5px solid; */
+}
+.menu-item a {
+  color: white;
+}
+
+/* HERO */
+
+.hero {
+  background-color: #128686;
+  top: 10vh;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.premium-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 80vw;
+  position: relative;
+  z-index: 10;
+  left: 15px;
+  border: black 1.5px solid;
+}
+
+.premium-info h1,
+h2 {
+  margin: 0;
+  border: black 1.5px solid;
+}
+.premium-info a{
     color: white;
 }
-.menu-item{
-    margin: 0 15px;
+.premium-info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.premium-info h1{
+    font-size: 70px;
+}
+.premium-info h2{
+    font-size: 20px;
 }
 
 .plans-bottom {
-    background-color: green;
-    border-radius: 9%;
-    padding: 7px;
+  background-color: green;
+  border-radius: 2em;
+  padding: 5px 20px;
+  width: 125px;
+  border: black 1.5px solid;
+}
+.dancer {
+  height: 50vh;
+  width: 315px;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  
+}
+.dancer-img {
+  width: 100%;
+  height: 100%;
 }
 
-/* SECCION PREMIUM BANNER */
+/* MAIN */
+.main {
+  border: black 1.5px solid;
+}
+.main h1 {
+    border: black 1.5px solid;
+    background-color: chocolate; 
+}
+.benefits{
+    border: green 1.5px solid;
+    background-color: grey;
+}
+.benefit-item {
+    background-color: hotpink;
+}
+.benefit-item img {
+    border: black 1.5px solid;
+}
+.benefit-text {
+    border: black 1.5px dotted;
+}
 
-.premium-banner {
-    background-color: #128686;
+/* FOOTER */
+.footer{
+    border: black 1.5px solid;
+    background-color: cadetblue;
+}
+.info{
+    border: black 1.5px solid;
+}
+.info li{
+    border: black 1.5px solid;
+}
+.copyright{
+    border: black 1.5px solid;
+    background-color: chartreuse;
+}
+.copyright li{
+    border: black 1.5px solid;
+}
+.copyright img{
+    border: black 1.5px solid;
 }
