@@ -144,12 +144,12 @@ h2 {
 .benefit-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  width: 160px;
+  width: 200px;
 }
 .benefit-item img {
 width: 70%;
+padding-bottom: 40px;
 }
 .benefit-text {
 text-align: center;
