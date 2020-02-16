@@ -5,6 +5,10 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222326;
 }
 a {
   text-decoration: none;
@@ -22,7 +26,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  /* border: white 1.5px solid; */
+  z-index: 10;
+  padding: 0 40px;
 }
 .logo-spotify {
   width: 90px;
@@ -52,10 +57,11 @@ ul {
 .hero {
   background-color: #128686;
   top: 10vh;
-  height: 50vh;
+  height: 65vh;
   display: flex;
   align-items: center;
   position: relative;
+  z-index: 5;
 }
 .premium-info {
   display: flex;
@@ -63,46 +69,48 @@ ul {
   justify-content: space-around;
   flex-wrap: wrap;
   height: 100%;
-  width: 80vw;
+  width: 75vw;
   position: relative;
   z-index: 10;
   left: 15px;
-  border: black 1.5px solid;
+  padding: 0 40px;
 }
 
 .premium-info h1,
 h2 {
   margin: 0;
-  border: black 1.5px solid;
 }
-.premium-info a{
-    color: white;
+.premium-info a {
+  color: white;
 }
-.premium-info{
-    color: white;
-    font-family: 'Open Sans', sans-serif;
+.premium-info {
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
-.premium-info h1{
-    font-size: 70px;
+.premium-info h1 {
+  font-size: 70px;
 }
-.premium-info h2{
-    font-size: 20px;
+.premium-info h2 {
+  font-size: 24px;
+}
+.premium-info small {
+  width: 56vw;
 }
 
 .plans-bottom {
   background-color: green;
+  text-transform: uppercase;
   border-radius: 2em;
-  padding: 5px 20px;
-  width: 125px;
-  border: black 1.5px solid;
+  padding: 9px 28px;
+  width: 152px;
 }
 .dancer {
-  height: 50vh;
-  width: 315px;
+  height: 65vh;
+  width: 385px;
   position: absolute;
   right: 0;
   bottom: 0px;
-  
+  margin-right: 20px;
 }
 .dancer-img {
   width: 100%;
@@ -111,44 +119,73 @@ h2 {
 
 /* MAIN */
 .main {
-  border: black 1.5px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 71px;
+  height: 80vh;
 }
 .main h1 {
-    border: black 1.5px solid;
-    background-color: chocolate; 
+  text-align: center;
+  margin: 0em;
+  position: relative;
+  bottom: 30px;
 }
-.benefits{
-    border: green 1.5px solid;
-    background-color: grey;
+.benefits {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
 }
+
 .benefit-item {
-    background-color: hotpink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
 }
 .benefit-item img {
-    border: black 1.5px solid;
+width: 70%;
 }
 .benefit-text {
-    border: black 1.5px dotted;
+text-align: center;
 }
 
 /* FOOTER */
-.footer{
-    border: black 1.5px solid;
-    background-color: cadetblue;
+.footer {
+  background-color: black;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
-.info{
-    border: black 1.5px solid;
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-left: 40px;
+  margin-bottom: 10px;
 }
-.info li{
-    border: black 1.5px solid;
+.info li {
+  color: white;
+  padding: 10px;
 }
-.copyright{
-    border: black 1.5px solid;
-    background-color: chartreuse;
+.copyright {
+  padding: 0;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
-.copyright li{
-    border: black 1.5px solid;
+.copyright li {
+  color: white;
 }
-.copyright img{
-    border: black 1.5px solid;
+.copyright img {
+  width: 30px;
 }
